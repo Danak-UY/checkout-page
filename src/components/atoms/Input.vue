@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const { id, onChange } = defineProps<{
   id: string;
   type: string;
   icon: string;
@@ -7,6 +7,11 @@ defineProps<{
   placeholder: string;
   onChange: (key: string, value: string) => void;
 }>();
+
+const onValueChange = (ev: Event) => {
+  const value = (ev.target as HTMLInputElement)?.value || "";
+  onChange(id, value);
+};
 </script>
 
 <template>
@@ -22,8 +27,8 @@ defineProps<{
       :type="type"
       :id="id"
       :placeholder="placeholder"
-      class="font-semibold text-base p-4 rounded-xl border border-gray-neutral block w-full focus:border-orange-neutral focus-visible:outline-none"
-      @change="(ev: Event) => onChange(id, ev.target?.value || '')"
+      class="font-semibold text-base p-4 rounded-xl border border-gray-neutral block w-full focus:border-orange-neutral focus-visible:outline-none placeholder:text-gray-light"
+      @change="onValueChange"
     />
   </span>
 </template>

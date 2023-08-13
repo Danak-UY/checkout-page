@@ -5,7 +5,7 @@ import { Total as TotalDTO } from "../../models/Total";
 import Product from "../molecules/Product.vue";
 import SubTotal from "../molecules/SubTotal.vue";
 
-const { products } = defineProps<{
+defineProps<{
   products: ProductDTO[];
   totals: TotalDTO[];
   onChangeUnits: (id: string, quantity: number) => void;

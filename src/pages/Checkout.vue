@@ -4,7 +4,7 @@ import { reactive, onMounted, computed } from "vue";
 import { Cart } from "../models/Cart";
 
 import getProductsCart from "../services/getProductsCart";
-import { calculateTotal } from "../helpers/cartTotal";
+import { calculateTotal, calculateShipping } from "../helpers/cartTotal";
 
 import MainLayout from "../components/templates/MainLayout.vue";
 import CheckoutForm from "../components/organisms/CheckoutForm.vue";
@@ -30,16 +30,20 @@ const updateForm = (key: string, value: string) => {
   cart.form[key] = value;
 };
 
-const totals = computed(() => [
-  {
-    title: "Shipping",
-    price: 10,
-  },
-  {
-    title: "Total",
-    price: calculateTotal(cart.products),
-  },
-]);
+const totals = computed(() => {
+  const shippingPrice = calculateShipping(cart.form.country ?? "");
+  const totalPrice = calculateTotal(cart.products, shippingPrice);
+  return [
+    {
+      title: "Shipping",
+      price: shippingPrice,
+    },
+    {
+      title: "Total",
+      price: totalPrice,
+    },
+  ];
+});
 </script>
 
 <template>

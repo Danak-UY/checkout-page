@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Input from "../atoms/Input.vue";
+import CountrySelect from "../molecules/CountrySelect.vue";
 import Button from "../atoms/Button.vue";
 import Checkbox from "../atoms/Checkbox.vue";
 import SubTitle from "../atoms/SubTitle.vue";
@@ -65,11 +66,10 @@ defineProps<{
           :onChange="onValueChange"
         />
 
-        <div class="flex gap-8">
-          <Input
+        <div class="grid grid-cols-2 gap-8">
+          <CountrySelect
             id="country"
             label="Country"
-            type="text"
             placeholder="Select your country"
             icon="world"
             :onChange="onValueChange"
@@ -78,7 +78,7 @@ defineProps<{
           <Input
             id="postal-code"
             label="Postal code"
-            type="text"
+            type="tel"
             placeholder="Enter your postal code"
             icon="house"
             :onChange="onValueChange"
