@@ -6,9 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    class="border rounded-xl flex gap-6 py-2 px-4 items-center border-gray-light"
-  >
+  <div class="border rounded-xl flex gap-6 p-2 items-center border-gray-light">
     <button
       :disabled="units <= 1"
       @click="onChange(units - 1)"

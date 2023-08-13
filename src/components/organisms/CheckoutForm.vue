@@ -94,7 +94,7 @@ defineProps<{
     </div>
 
     <div class="flex justify-end">
-      <Button>Continue</Button>
+      <Button class="w-full md:w-auto">Continue</Button>
     </div>
   </form>
 </template>

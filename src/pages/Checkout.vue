@@ -48,10 +48,12 @@ const totals = computed(() => {
 
 <template>
   <MainLayout title="Checkout">
-    <div class="grid grid-cols-2">
+    <div
+      class="grid auto-rows-auto md:grid-rows-1 md:grid-cols-2 gap-16 md:gap-8 lg:gap-0"
+    >
       <CheckoutForm :onValueChange="updateForm" />
 
-      <aside class="pl-20 w-full">
+      <aside class="lg:pl-20 w-full order-first md:order-none">
         <ProductCart
           :products="cart.products"
           :totals="totals"
