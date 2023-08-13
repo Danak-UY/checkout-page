@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MainLayout from "./components/templates/MainLayout.vue";
+import Checkout from "./pages/Checkout.vue";
 </script>
 
 <template>
-  <MainLayout />
+  <Checkout />
 </template>

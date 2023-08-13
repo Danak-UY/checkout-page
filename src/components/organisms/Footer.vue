@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Attribution from "../atoms/Attribution.vue";
+import Attribution from "../molecules/Attribution.vue";
 </script>
 
 <template>
