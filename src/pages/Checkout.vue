@@ -22,7 +22,7 @@ onMounted(async () => {
 
 const updateUnits = (id: string, quantity: number) => {
   const product = cart.products.find((p) => p.id === id);
-  product.quantity = quantity;
+  product!.quantity = quantity;
 };
 
 const updateForm = (key: string, value: string) => {

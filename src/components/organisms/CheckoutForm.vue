@@ -21,7 +21,7 @@ defineProps<{
           label="E-mail"
           type="email"
           placeholder="Enter your e-mail"
-          icon="envelope"
+          icon="email"
           :onChange="onValueChange"
         />
         <Input
@@ -44,7 +44,7 @@ defineProps<{
           label="Full name"
           type="text"
           placeholder="Enter your full name"
-          icon="envelope"
+          icon="user"
           :onChange="onValueChange"
         />
 
@@ -62,7 +62,7 @@ defineProps<{
           label="City"
           type="text"
           placeholder="Enter your city"
-          icon="envelope"
+          icon="city"
           :onChange="onValueChange"
         />
 
@@ -80,7 +80,7 @@ defineProps<{
             label="Postal code"
             type="tel"
             placeholder="Enter your postal code"
-            icon="house"
+            icon="mailbox"
             :onChange="onValueChange"
           />
         </div>

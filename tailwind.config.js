@@ -8,6 +8,7 @@ export default {
           light: "#BDBDBD",
           neutral: "#4F4F4F",
           dark: "#4E5150",
+          icon: "#828282",
         },
         orange: {
           neutral: "#F2994A",

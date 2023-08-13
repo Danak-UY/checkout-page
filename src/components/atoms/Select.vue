@@ -3,6 +3,8 @@ import { ref } from "vue";
 
 import { Option } from "../../models/Option";
 
+import Icon from "./Icon.vue";
+
 const { id, onChange } = defineProps<{
   id: string;
   icon: string;
@@ -32,10 +34,12 @@ const onValueChange = (ev: Event) => {
     </label>
 
     <span class="relative block">
+      <Icon :name="icon" class="absolute top-1/2 left-3 -translate-y-1/2" />
+
       <select
         :id="id"
         :placeholder="placeholder"
-        class="font-semibold text-base p-4 rounded-xl text-gray-light bg-white border border-gray-neutral block w-full focus:border-orange-neutral focus-visible:outline-none"
+        class="font-semibold text-base p-4 pl-11 rounded-xl text-gray-light bg-white border border-gray-icon block w-full focus:border-orange-neutral focus-visible:outline-none"
         :class="{ 'text-gray-neutral': selectedValue !== '' }"
         @change="onValueChange"
       >
@@ -52,7 +56,7 @@ const onValueChange = (ev: Event) => {
       <button
         aria-hidden
         tabindex="-1"
-        class="absolute top-1/2 right-2 -translate-y-1/2 px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default pointer-events-none outline-4 outline outline-offset-0 outline-white"
+        class="absolute text-sm flex top-1/2 right-2 -translate-y-1/2 px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default pointer-events-none outline-4 outline outline-offset-0 outline-white"
       >
         &#9013;
       </button>

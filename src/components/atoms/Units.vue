@@ -12,7 +12,7 @@ defineProps<{
     <button
       :disabled="units <= 1"
       @click="onChange(units - 1)"
-      class="px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default"
+      class="px-2 flex items-center aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default"
     >
       -
     </button>
@@ -20,7 +20,7 @@ defineProps<{
     <button
       :disabled="units >= 9"
       @click="onChange(units + 1)"
-      class="px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default"
+      class="px-2 flex items-center aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default"
     >
       +
     </button>
