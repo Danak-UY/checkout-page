@@ -3,7 +3,7 @@ import Link from "../atoms/Link.vue";
 </script>
 
 <template>
-  <p class="text-center text-sm font-medium text-light">
+  <p class="text-center text-sm font-medium text-gray-light">
     created by
     <Link
       label="@Danak-UY"

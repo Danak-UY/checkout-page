@@ -13,7 +13,7 @@ defineProps<{
   >
     <Header :title="title" class="mb-10" />
     <main class="flex-1 mb-20">
-      <slot></slot>
+      <slot />
     </main>
     <Footer />
   </div>

@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "PROD-001",
+      "name": "Vintage Backpack",
+      "currentPrice": 54.99,
+      "prevPrice": 94.99,
+      "image": "vintage-backpack",
+      "quantity": 1
+    },
+    {
+      "id": "PROD-002",
+      "name": "Levi Shoes",
+      "currentPrice": 74.99,
+      "prevPrice": 124.99,
+      "image": "levi-shoes",
+      "quantity": 1
+    }
+  ]
+}

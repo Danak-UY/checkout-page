@@ -6,7 +6,7 @@ import SubTitle from "../atoms/SubTitle.vue";
 </script>
 
 <template>
-  <form class="flex flex-col">
+  <form class="flex flex-col" @submit.prevent>
     <div class="mb-16">
       <SubTitle class="mb-4">Contact Information</SubTitle>
 
