@@ -2,15 +2,15 @@
 import CostDetailLine from "../atoms/CostDetailLine.vue";
 import { Total } from "../../models/Total";
 
-defineProps<{ totals: Total[] }>();
+const props = defineProps<{ totals: Total[] }>();
+
+console.log(props.totals);
 </script>
 
 <template>
-  <div>
-    <CostDetailLine
-      v-for="total in totals"
-      :title="total.title"
-      :price="total.price"
-    />
-  </div>
+  <CostDetailLine
+    v-for="total in totals"
+    :title="total.title"
+    :price="total.price"
+  />
 </template>

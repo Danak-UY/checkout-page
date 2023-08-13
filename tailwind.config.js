@@ -13,15 +13,10 @@ export default {
           neutral: "#F2994A",
         },
       },
-      fontSize: {
-        "3xs": "0.5rem",
-        "2xs": "0.625rem",
-      },
     },
 
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
-      serif: ['"Playfair Display"', "serif"],
     },
     container: {
       center: true,

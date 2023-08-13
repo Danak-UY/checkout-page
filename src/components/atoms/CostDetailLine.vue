@@ -2,9 +2,8 @@
 import { formatPrice } from "../../helpers/formatters";
 import { Total } from "../../models/Total";
 
-const props = defineProps<Total>();
+const { price } = defineProps<Total>();
 
-const { price } = props;
 const priceFormatted = formatPrice(price);
 </script>
 

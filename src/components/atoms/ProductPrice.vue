@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { formatPrice } from "../../helpers/formatters";
 
-const props = defineProps<{
+const { currentPrice, prevPrice } = defineProps<{
   currentPrice: number;
   prevPrice?: number;
 }>();
-
-const { currentPrice, prevPrice } = props;
 
 const currentPriceFormatted = formatPrice(currentPrice);
 const prevPriceFormatted = formatPrice(prevPrice);

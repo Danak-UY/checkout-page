@@ -3,6 +3,10 @@ import Input from "../atoms/Input.vue";
 import Button from "../atoms/Button.vue";
 import Checkbox from "../atoms/Checkbox.vue";
 import SubTitle from "../atoms/SubTitle.vue";
+
+defineProps<{
+  onValueChange: (key: string, value: string) => void;
+}>();
 </script>
 
 <template>
@@ -17,6 +21,7 @@ import SubTitle from "../atoms/SubTitle.vue";
           type="email"
           placeholder="Enter your e-mail"
           icon="envelope"
+          :onChange="onValueChange"
         />
         <Input
           id="phone"
@@ -24,6 +29,7 @@ import SubTitle from "../atoms/SubTitle.vue";
           type="tel"
           placeholder="Enter your phone"
           icon="phone"
+          :onChange="onValueChange"
         />
       </div>
     </div>
@@ -38,21 +44,27 @@ import SubTitle from "../atoms/SubTitle.vue";
           type="text"
           placeholder="Enter your full name"
           icon="envelope"
+          :onChange="onValueChange"
         />
+
         <Input
           id="address"
           label="Address"
           type="text"
           placeholder="Enter your address"
           icon="house"
+          :onChange="onValueChange"
         />
+
         <Input
           id="city"
           label="City"
           type="text"
           placeholder="Enter your city"
           icon="envelope"
+          :onChange="onValueChange"
         />
+
         <div class="flex gap-8">
           <Input
             id="country"
@@ -60,19 +72,23 @@ import SubTitle from "../atoms/SubTitle.vue";
             type="text"
             placeholder="Select your country"
             icon="world"
+            :onChange="onValueChange"
           />
+
           <Input
             id="postal-code"
             label="Postal code"
             type="text"
             placeholder="Enter your postal code"
             icon="house"
+            :onChange="onValueChange"
           />
         </div>
 
         <Checkbox
           id="save-address"
           label="Save this information for next time"
+          :onChange="onValueChange"
         />
       </div>
     </div>
