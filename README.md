@@ -1,18 +1,83 @@
-# Vue 3 + TypeScript + Vite
+<!-- Please update value in the {}  -->
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h1 align="center">Checkout Page - Dev Challenges</h1>
 
-## Recommended IDE Setup
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<div align="center">
+  <h3>
+    <a href="https://checkout-page-azure.vercel.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/Danak-UY/checkout-page">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Type Support For `.vue` Imports in TS
+<!-- TABLE OF CONTENTS -->
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Table of Contents
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How to user](#how-to-use)
+- [UserStories](#user-stories)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](./resources/screenshot.png)
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [VueJs](https://vuejs.org/) - JS Framework
+- [TailwindCSS](https://tailwindcss.com/) - CSS Styling
+- [Material Icons](https://developers.google.com/fonts/docs/material_icons) - Form Icons
+
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Danak-UY/checkout-page
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
+```
+
+## Acknowledgements
+
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+
+- [Squoosh](https://squoosh.app/) - Optimize images with webp
+
+## User Stories
+
+- I can see a page following the given design
+- I can input email, phone, full name, address, city, country, and postal code
+- I can input the number of items
+- I can select at least 3 countries from the dropdown
+- When I click submit button or press enter, I can see a warning if validation fails
+- When I click submit button or press enter, I can see a successful alert if validation succeeds
