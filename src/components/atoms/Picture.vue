@@ -5,7 +5,7 @@ const { url, alt } = defineProps<{
 }>();
 
 const imageAlt = alt ?? "";
-const imagePath = `/src/assets/${url}.webp`;
+const imagePath = `/${url}.webp`;
 const imageUrl = new URL(imagePath, import.meta.url).href;
 </script>
 
