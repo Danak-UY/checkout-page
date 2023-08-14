@@ -10,7 +10,7 @@ defineProps<Total>();
   <p
     class="flex justify-between items-center py-3 border-t border-gray-light last-of-type:pb-0"
   >
-    <span class="text-lg font-semibold">{{ title }}</span>
+    <span class="text-sm md:text-lg font-semibold">{{ title }}</span>
     <span
       class="text-sm font-semibold"
       :class="{ 'text-gray-light': !price }"

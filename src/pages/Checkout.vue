@@ -49,7 +49,7 @@ const totals = computed(() => {
 <template>
   <MainLayout title="Checkout">
     <div
-      class="grid auto-rows-auto md:grid-rows-1 md:grid-cols-2 gap-16 md:gap-8 lg:gap-0"
+      class="grid auto-rows-auto md:grid-rows-1 md:grid-cols-2 gap-12 md:gap-8 lg:gap-0"
     >
       <CheckoutForm :onValueChange="updateForm" />
 

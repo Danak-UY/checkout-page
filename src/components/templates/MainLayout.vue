@@ -11,7 +11,7 @@ defineProps<{
   <div
     class="container flex min-h-screen max-w-5xl flex-col gap-6 p-4 py-8 md:p-8 md:pt-16 text-gray-dark"
   >
-    <Header :title="title" class="mb-10" />
+    <Header :title="title" class="mb-0 md:mb-10" />
     <main class="flex-1 mb-20">
       <slot />
     </main>

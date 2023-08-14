@@ -26,6 +26,6 @@ const iconMap: Record<string, any> = {
   <component
     :is="iconMap[name]"
     fillColor="currentColor"
-    class="text-gray-icon"
+    class="text-gray-icon flex"
   />
 </template>

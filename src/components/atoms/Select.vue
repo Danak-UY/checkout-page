@@ -34,7 +34,10 @@ const onValueChange = (ev: Event) => {
     </label>
 
     <span class="relative block">
-      <Icon :name="icon" class="absolute top-1/2 left-3 -translate-y-1/2" />
+      <Icon
+        :name="icon"
+        class="absolute top-1/2 left-3 -translate-y-1/2 w-5 md:w-6"
+      />
 
       <select
         :id="id"
@@ -56,7 +59,7 @@ const onValueChange = (ev: Event) => {
       <button
         aria-hidden
         tabindex="-1"
-        class="absolute text-sm flex top-1/2 right-2 -translate-y-1/2 px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default pointer-events-none outline-4 outline outline-offset-0 outline-white"
+        class="absolute text-sm flex top-1/2 right-1 md:right-2 -translate-y-1/2 px-2 aspect-square bg-gray-200 rounded disabled:opacity-50 cursor-pointer disabled:cursor-default pointer-events-none outline-4 outline outline-offset-0 outline-white scale-75 md:scale-100"
       >
         &#9013;
       </button>

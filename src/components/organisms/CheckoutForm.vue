@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <form class="flex flex-col" @submit.prevent>
-    <div class="mb-16">
+    <div class="mb-12 md:mb-16">
       <SubTitle class="mb-4">Contact Information</SubTitle>
 
       <div class="flex flex-col gap-5">
